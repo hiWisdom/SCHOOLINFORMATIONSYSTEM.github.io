@@ -1,0 +1,43 @@
+			SIS (SCHOOL INFORMATION SYSTEM)
+
+ Introduction
+
+School Information System (SIS) is a web application that enables registration of school staffs and students for documentation activities both parties carry out or pertake.
+The School Information System would be use mainly by school staffs and not student. School staffs such as school owner, principal, vice principal, adminitrative and teacher.
+The system will enable this party work seamless, paperless, fast.
+And for student it will make their work and school process fast, qucik, smart.
+
+Uses of SIS for staffs and students
+Staffs
+1. Staffs can do registration
+2. Staffs can book class schedule
+3. Staffs can write notes and assignment and send to student and student can answer send back and staffs can mark.
+4. Staffs can conduct computer base exam through system
+5. Staffs can post student school fees and print
+6. Staff can print different report e.g Student report card, Student attendant sheet, Student timetable, Staff timetable, 
+7. Staffs can track inventory order
+8. Staffs can print id cards, personal details and information.
+
+
+Function of School Information System:
+Attendance, Results, Timetable, Sms
+
+
+
+
+
+School Information Processes
+
+Three Categories of people to use the school information system.
+1. Admin
+2. Teacher
+3. Student
+
+
+Module Access For The Three Categories:
+
+1. Admin
+2. Teacher
+3. Student
+
+

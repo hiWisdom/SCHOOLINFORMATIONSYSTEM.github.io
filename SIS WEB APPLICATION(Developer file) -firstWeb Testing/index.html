@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+<title>SCHOOL INFORMATION SYSTEM</title>
+<meta name="viewport" content="width=device-width initial-scale=1"/>
+
+    <!-- Frameworks links, Stylesheet links, JavaScript links -->
+<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
+<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/bootstrap/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" href="stylesheets/sis.css"/>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+
+
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.min.js"></script>
+<script src="script/sis.js"></script>
+<script src="script/sisFormOperator.js"></script>
+
+
+<!-- Optional JavaScript; choose one of the two! -->    <!-- Option 1: Bootstrap Bundle with Popper -->    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>--->
+
+
+
+
+
+
+<style>
+
+
+*{font-family: 'Segoe UI', Tahoma, sans-serif;}
+.header-first-div{background:linear-gradient(grey,skyblue);height:23px;}
+main{background:linear-gradient(grey,skyblue);height:100px;}
+footer{/*background:linear-gradient(rgb(0,0,5), rgba(0,0,1,0.5));*/border:1px grove black;height:30px;margin-top:10vh;}
+h3{text-align:center; font-size:30px;}
+h5{text-align:center;font-size:12px;}
+#background_image{float:left;margin-left:20%;}
+img{width:100%;height:120px;}
+.label{display:block;color:black;font-size:17px;}
+#login_button{color:skyblue;font-size:16px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;} #login_button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
+form{display:table;margin-left:auto;margin-right:66.5%;background:linear-gradient(grey,skyblue);padding:2%;width:35%;}
+input {display:table;border:1px solid black;margin-left:auto;margin-right:auto;width:70%;height:25px;font-size:15px;font-weight:bold;font-family:new roman;}
+select{display:table;border:1px solid black;margin-left:auto;margin-right:auto;width:70%;height:25px;font-size:15px;font-weight:bold;font-family:new roman;}
+.input_typeDrp{width:70%; font-size:15px; font-weight:bold; font-family:new roman; height:25px; }
+.subMenu-link-text-color{padding:20px}
+
+
+
+
+</style>
+
+
+<script>
+
+var time = new Date().getHours();
+if( time < 20 ){
+alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
+};
+else if( time > 20 ){
+alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
+};
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="body">
+
+<div class="container-fluid header-first-div"><h6>Welcome!! to school information system application</h6><script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script></div>
+
+<header class="container-fluid">
+
+<form action="homepage.html" method="post" onsubmit="return validateSigninDetailsB4PHP()">
+
+<h3><a href="index.html" style="color:black;"><b>Sign In</b> <i class="fas fa-sign-out-alt webapplication-icons" id="webapplication-icons-signin"></i></a></h3>
+
+
+<BR>
+<BR>
+<BR>
+
+
+
+<!--<label for="username" class="label" title="username is firstname and lastname">User Name</label>--->
+<input value="" title="username is firstname and lastname" type="text" class="input_typeA" id="username" placeholder="username"/>
+<br>
+<!--<label for="password" class="label" title="password is access-code to school information system and must be more than ten characters">Password</label>--->
+<input value="" title="password is access-code to school information system and must be more than ten characters" type="password" class="input_typeB" id="password" placeholder="password"/>
+<br>
+
+<!--<label for="status" class="label" title="choose your category">Category</label>-->
+<select id="status" value="" title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student.">
+<option value="" type="status" class="input_typeDrp" placeholder="category"></option>
+<option value="administration" type="status" class="input_typeDrp" id="admin_category">Administrative</option>
+<option value="teacher" type="status" class="input_typeDrp" id="teacher_category">Teacher</option>
+<option value="student" type="status" class="input_typeDrp" id="student_category">Student</option>
+</select>
+<br>
+<input type="submit" value="Sign-In" id="login_button" title="Log-In"/>
+</form>
+
+
+<script>
+
+var UserName = document.getElementById("username");
+var PassWord = document.getElementById("password");
+var categoryVerification = document.getElementById("status");
+
+function validateSigninDetailsB4PHP() {
+
+if(UserName.value==""){alert("Please Fill Username");
+UserName.focus();
+UserName.style.border="1px solid red";
+return false;}
+
+if (PassWord.value=="" || PassWord.value.length <= 9 ){alert("Please Fill password and ensure characters is 10 or more");
+PassWord.focus();
+PassWord.style.border="1px solid red";
+return false;}
+
+
+if (categoryVerification.value==""){alert("Choose your category");
+PassWord.focus();
+PassWord.style.border="1px solid red";
+return false;}
+
+return true;
+};
+
+</script>
+
+
+</header>
+
+
+
+<main>
+
+<div id="background_image"><img src="logo/sislogo.png"></div>
+<h5 title="Develop by the Healthy Harvester Technologies"><b>&copy School Information System </b></h5>
+
+
+</main>
+
+
+
+<footer class="container-fluid">
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+<title>CLASSES</title>
+<meta name="viewport" content="width=device-width initial-scale=1"/>
+
+  <!-- Frameworks links, Stylesheet links, JavaScript links -->
+<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
+<link rel="stylesheet" href="stylesheets/sis.css"/>
+
+
+
+
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.min.js"></script>
+<script src="script/sis.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+*{font-family: 'Segoe UI', Tahoma, sans-serif;}
+nav ul{width:100%;position:relative;top:40px;margin-left:20px} 
+li{display:inline;}
+p{height:5px;}
+#reportbutton{font-size:12px;color:blue;box-sizing:border-box;}
+#reportbutton:hover{border:1px solid black;}
+.subMenu-link-text-color{color:black;padding:20px;height:50%;font-size:20px;}
+.subMenu-link-design1{width:100%;background:linear-gradient(grey,skyblue);height:10px;margin-top:5%;}
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+<header>
+
+</header>
+
+<main>
+
+
+<nav>
+<ul>
+<li><button onclick="registerReport()" class="btn btn" id="reportbutton" title="Demographic Reports."><p class="subMenu-link-text-color">Register Report</p> </button></li>
+<li><button onclick="billingReport()" class="btn btn" id="reportbutton" title="Financial Reports."><p class="subMenu-link-text-color">Billing Report</p> </button></li>
+<li><button onclick="classReport()" class="btn btn" id="reportbutton" title="Teacher and Student Reports."><p class="subMenu-link-text-color">Class Report</p> </button></li>
+<li><button onclick="bookReport()" class="btn btn" id="reportbutton" title="Book Management Reports."><p class="subMenu-link-text-color">Book Report</p> </button></li>
+<li><button onclick="libaryReport()" class="btn btn" id="reportbutton" title="School Libary Reports."><p class="subMenu-link-text-color">Libary Report</p> </button></li>
+<li><button onclick="inventoryReport()" class="btn btn" id="reportbutton" title="Inventory Management Reports"><p class="subMenu-link-text-color">Inventory Report</p> </button></li>
+</ul>
+</nav>
+
+
+<div class="subMenu-link-design1" title="SCHOOL INFORMATION SYSTEM ALL RIGHTS RESERVED PRIVATELY."></div>
+</main>
+
+<script>
+
+function registerReport() {
+window.location="registerReport.html";
+}
+
+function billingReport() {
+window.location="billingReport.html";
+}
+
+function classReport() {
+window.location="classReport.html";
+}
+
+function bookReport() {
+window.location="bookReport.html";
+}
+
+function libaryReport() {
+window.location="libaryReport.html";
+}
+
+function inventoryReport() {
+window.location="inventoryReport.html";
+}
+</script>
+</body>
+
+
+</html>
