@@ -7,55 +7,14 @@
 <link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
 <link rel="stylesheet" href="stylesheets/sis.css"/>
+<link rel="stylesheet" href="newRegistrationStylesheet.css"/> 
 
-
-
-
-
-
-
-<style>
-
-*{font-family: 'Segoe UI', Tahoma, sans-serif;}
-body{background:white;}
-nav ul{width:100%;position:relative;top:20px;margin-left:1%;} 
-li {display:inline;}
-#page-title-registration{margin-left:40%;margin-top:-20px;}
-#registrationbutton{font-size:12px;color:blue;border:none;}
-#registrationbutton:hover{border:1px solid black;}
-header{margin-top:80px;border:1px solid black;border-right:none;border-left:none;}
-label{color:default;}
-span{color:default;text-decoration:underline;position:relative;}
-h2{color:black;}
-ul{list-style:none;display:flex;margin-right:15%;}
-li{margin:2px;}
-#span-one{left:50%;}
-#span-two{left:50%;}
-#span-three{left:50%;}
-#span-four{left:35%;}
-#regNumber{transform:translateX(170%);}
-#registrationNumber{width:100px;}
-#help{margin-left:94%;margin-top:-11%;font-size:12px;position:fixed;}
-#note{margin-left:91%;margin-top:-11%;font-size:12px;position:fixed;}
-#div_nav{float:right;margin-top:-10%;margin-right:5%}
-select{width:200px;}
-.fills_decoration {width:200px; border:1px solid black;}
-#regForm{display:table;padding:10px;background:transparent;height:750px;width:100%;border:2%; overflow:scroll; margin-bottom:0%;margin-top:-6%;margin-right:0%;margin-left:0%;}
-.row {display:table-row; line-height:2.5em;}
-.row label{display:table-cell;text-align:right;} .row input {display:table-cell;}
-.form_parts{border:1px solid black;border-left:none;border-top:none;}
-#form_parts{display:grid; grid-colums:auto; grid-rows:auto; grid-gap:50px;}
-#part1{width:100%;grid-colum:1,3; grid-row:1;}
-#part2{width:100%;grid-colum:2,3; grid-row:1;}
-#part3{width:100%;grid-colum:3,3; grid-row:1;}
-
-</style>
 </head>
 
 
 <body>
 
-<nav>
+<!---<nav style="border:1px solid black; margin-top:-15px; margin-bottom:-25px; height:40px;">
 <ul>
 <li><button onclick="RegisterRegistration()" class="btn btn" id="registrationbutton">Register </button></li>
 <li><button onclick="SearchRegistration()" class="btn btn" id="registrationbutton">Search Registration </button></li>
@@ -78,11 +37,10 @@ window.location="search-registration.html";
 </script>
 
 <div id="page-title-registration">
-<h2 title="NOTE: registration page is scrollable">REGISTRATION FORM</h2>
+<h2 title="NOTE: registration page is scrollable">Registration Form</h2>
 </div>
 
-</nav>
-
+</nav>--->
 
 
 <form method="post" action="homepage.html" id="regForm" onsubmit="return siSregistrationFormValidation()">
@@ -100,7 +58,7 @@ window.location="search-registration.html";
 </div>
 
 <div class="row" id="regNumber" title="NOTE: registration number can serve as search createria">
-<label for="registrationNumber">Registration Number </label>: <input type="search" id="registrationNumber" class="fills_decoration">
+<!---<label for="registrationNumber">Registration Number </label>: ---><input type="search" placeholder="Registration Number" id="registrationNumber" class="fills_decoration">
 </div>
 
 
@@ -110,11 +68,11 @@ window.location="search-registration.html";
 
 <div id="div_nav">
 <ul id="nav">
-<li class="nav_buttons" id="navbutton-one"><input title="Start new registration" type="button" onclick="anewRegistration()" value="new" name=""/></li>
-<li class="nav_buttons" id="navbutton-two"><input title="Save registration details" type="submit" onclick="saveRegistration()" value="save" name=""/></li>
-<li class="nav_buttons" id="navbutton-three"><input title="update registration detials"type="button" onclick="updateRegistration()" value="update" name=""/></li>
-<li class="nav_buttons" id="navbutton-four"><input title="print registration detials"type="button" onclick="printRegistrationDetails()" value="print Reg details" name=""/></li>
-<li class="nav_buttons" id="navbutton-five"><input title="print ID Card"type="button" onclick="printRegistrationIdCard()" value="print ID Card" name=""/></li>
+<li class="nav_buttons" id="navbutton-one"><input title="Start new registration" class="registration-buttons" type="button" onclick="anewRegistration()" value="new" name=""/></li>
+<li class="nav_buttons" id="navbutton-two"><input title="Save registration details" class="registration-buttons" type="submit" onclick="saveRegistration()" value="save" name=""/></li>
+<li class="nav_buttons" id="navbutton-three"><input title="update registration detials" class="registration-buttons" type="button" onclick="updateRegistration()" value="update" name=""/></li>
+<li class="nav_buttons" id="navbutton-four"><input title="print registration detials" class="registration-buttons" type="button" onclick="printRegistrationDetails()" value="print Reg details" name=""/></li>
+<li class="nav_buttons" id="navbutton-five"><input title="print ID Card" class="registration-buttons" type="button" onclick="printRegistrationIdCard()" value="print ID Card" name=""/></li>
 </ul>
 </div>
 
@@ -135,7 +93,23 @@ window.location="newregistration.html";
 
 <div id="form_parts">
 
+
+
 <div id="part1" class="form_parts">
+<div class="profile-images">
+<img src="uploadProfilePicture.png" id="upload-img" title="Upload Picture">
+
+</div>
+<div class="custom-file">
+<label for="fileupload" id="upload-file-word">Profile Photo</label>
+<input type="file" id="fileupload" name="image" accept=".jpg, .png, .jpeg" onchange="validateFileupload"/>
+
+</div>
+</div>
+
+
+
+<div id="part2" class="form_parts">
 <span id="span-one">Bio Data </span>
 <br>
 
@@ -188,7 +162,7 @@ window.location="newregistration.html";
 
 
 <div class="row">
-<label for="stateoforigin"><span style="color:red;text-decoration:none;">*</span> State Of Origin </label>: <input value="" nme="" type="text" id="stateoforigin" class="fills_decoration">
+<label for="stateoforigin"><span style="color:red;text-decoration:none;">*</span> State Of Origin </label>: <input value="" name="" type="text" id="stateoforigin" class="fills_decoration">
 </div>
 
 
@@ -207,11 +181,11 @@ window.location="newregistration.html";
 
 
 
-<div id="part2" class="form_parts">
-<span id="span-two">Contact </span>
+<div id="part3" class="form_parts">
+<span id="span-two">Contact Details </span>
 <br>
 <div class="row">
-<label for="phonenumber"><span style="color:red;text-decoration:none;">*</span> Phone Number </label>: <input value="" name="" type="tel" id="phonenumber" class="fills_decoration">
+<label for="phonenumber"><span style="color:red;text-decoration:none;">*</span> Phone Number </label>: <input value="" name="" maxlength="11" type="tel" id="phonenumber" class="fills_decoration">
 </div>
 
 
@@ -234,49 +208,143 @@ window.location="newregistration.html";
 </div>
 
 <div class="row">
-<label for="houseno"><span style="color:red;text-decoration:none;">*</span> Residence Address</label>: <textarea value="" name="" rows="5" cols="23" id="houseno" class="fills_decoration_textarea" placeholder="residence address..."></textarea>
+<label for="houseno" class="textarea-label"><span style="color:red;text-decoration:none;">*</span> Residence Address :</label> <textarea value="" name="" rows="1" cols="21" id="houseno" class="fills_decoration_textarea" placeholder="residence address..."></textarea>
 </div>
 
 </div>
 
 
-<div id="part3" class="form_parts">
-<span id="span-three">Next of Kin </span>
+<div id="part4" class="form_parts">
+<span id="span-three">Next of Kin Details </span>
 <br>
+
+<!---<div class="insider-form-arrange">--->
 
 <div class="row">
 <label for="fullnameK"><span style="color:red;text-decoration:none;">*</span> Full Name </label>: <input value="" name="" type="text" id="fullnameK" class="fills_decoration">
 </div>
 
 <div class="row">
-<label for="phonenumberK"><span style="color:red;text-decoration:none;">*</span> Phone Number </label>: <input value="" name="" type="tel" id="phonenumberK" class="fills_decoration">
+<label for="phonenumberK"><span style="color:red;text-decoration:none;">*</span> Phone </label>: <input value="" maxlength="11" name="" type="tel" id="phonenumberK" class="fills_decoration">
 </div>
 
 
 <div class="row">
-<label for="emailaddressK"><span style="color:red;text-decoration:none;">*</span> Email Address </label>: <input value="" name="" type="email" id="emailaddressK" class="fills_decoration">
+<label for="emailaddressK"><span style="color:red;text-decoration:none;">*</span> Email </label>: <input value="" name="" type="email" id="emailaddressK" class="fills_decoration" required>
 </div>
 
 <div class="row">
-<label for="housenoK"><span style="color:red;text-decoration:none;">*</span> Address</label>: <textarea value="" name="" rows="5" cols="23" id="housenoK" class="fills_decoration_textarea" placeholder="Next of kin residence address..."></textarea>
+<label for="housenoK" class="textarea-label"><span style="color:red;text-decoration:none;">*</span> Address :</label> <textarea value="" name="" rows="1" cols="21" id="housenoK" class="fills_decoration_textarea" placeholder="Next of kin residence address..."></textarea>
+</div>
+
+<!---</div>--->
+</div>
+
+
+
+<div id="part5" class="form_parts">
+<span id="span-four"> Medical Information </span>
+<br>
+<mark>If the student's attendance at school may be affected by an existing medical or physical condition, it is your responsiblity to complete and submit the student health plan.</mark>
+<div class="row">
+<label for="DoesYourChildHaveAnyMedicalOrPhysicalConditionsThatMayAffectHisOrHerAttendenceAtSchool"><span style="color:red;text-decoration:none;">*</span> Does your child have any medical or physical conditions that may affect his or her attendence at school </label>? Yes<input value="" name="DoesYourChildHaveAnyMedicalOrPhysicalConditionsThatMayAffectHisOrHerAttendenceAtSchool" type="radio" id="DoesYourChildHaveAnyMedicalOrPhysicalConditionsThatMayAffectHisOrHerAttendenceAtSchool"> No<input value="" name="DoesYourChildHaveAnyMedicalOrPhysicalConditionsThatMayAffectHisOrHerAttendenceAtSchool" type="radio" id="DoesYourChildHaveAnyMedicalOrPhysicalConditionsThatMayAffectHisOrHerAttendenceAtSchool">
+</div>
+
+<div class="row">
+<label for="IfYesPleaseGiveABriefDescription" class="textarea-label"><span style="color:red;text-decoration:none;">*</span>If yes, please give a brief description:</label> <textarea value="" name="" rows="1" cols="21" id="IfYesPleaseGiveABriefDescription" class="fills_decoration_textarea" placeholder="If yes, please give a brief description.."></textarea>
+</div>
+
+<div class="row">
+<label for="HaveYouCompletedTheStudentHealthPlan"><span style="color:red;text-decoration:none;">*</span>Have you completed the Student Health Plan ?</label>: Yes<input value="" name="HaveYouCompletedTheStudentHealthPlan" type="radio" id="HaveYouCompletedTheStudentHealthPlan"> No<input value="" name="HaveYouCompletedTheStudentHealthPlan" type="radio" id="HaveYouCompletedTheStudentHealthPlan">
+</div>
+
+<div class="row">
+<label for="IfStudentHealthPlanIsCompletedKindlyUpload" title="upload student health plan"><span style="color:red;text-decoration:none;">*</span>If Student Health plan is completed, Kindly Upload</label>: <input title="If Student Health Plan Is Completed Kindly Upload" type="file" accept=".pdf" id="IfStudentHealthPlanIsCompletedKindlyUpload" class="fills_decoration">
 </div>
 
 </div>
 
-
-
-<div id="part4" class="form_parts">
-<span id="span-four">Registration Authentication </span>
+<!---<div id="part6" class="form_parts">
+<span id="span-four">Medical Information </span>
 <br>
 
 <div class="row">
 <label for="proof_of_address" title="upload national id's or utilities bills"><span style="color:red;text-decoration:none;">*</span> Proof Of Address</label>: <input title="upload national id's or utilities bills" type="file" id="proof_of_address" class="fills_decoration">
 </div>
 
+</div>---->
+
+<div id="part7" class="form_parts">
+<span id="span-four">School Information</span>
+
+
+<div class="row">
+<label for="NameOfLastSchoolAttended"><span style="color:red;text-decoration:none;">*</span> Name of last school attended </label>? <input value="" name="" type="text" id="NameOfLastSchoolAttended" class="fills_decoration">
 </div>
 
+<div class="row">
+<label for="WasTheStudentSuspendedOrExpelledFromTheLastSchool"><span style="color:red;text-decoration:none;">*</span> Was the student suspended or expelled from the last school </label>? Yes<input value="" name="WasTheStudentSuspendedOrExpelledFromTheLastSchool" type="radio" id="WasTheStudentSuspendedOrExpelledFromTheLastSchool"> No<input value="" name="WasTheStudentSuspendedOrExpelledFromTheLastSchool" type="radio" id="WasTheStudentSuspendedOrExpelledFromTheLastSchool">
+</div>
 
+<div class="row">
+<label for="IfYesWasTheSuspensionResolved"><span style="color:red;text-decoration:none;">*</span> If yes, was the suspension resolved ?</label>: Yes<input value="" name="IfYesWasTheSuspensionResolved" type="radio" id="IfYesWasTheSuspensionResolved"> No<input value="" name="IfYesWasTheSuspensionResolved" type="radio" id="IfYesWasTheSuspensionResolved">
+</div>
 
+<div class="row">
+<label for="IfTheSuspensionHasBeenResolvdProvideFurtherInformation" class="textarea-label"><span style="color:red;text-decoration:none;">*</span> If the suspension has been resolved provide further information :</label> <textarea value="" name="" rows="1" cols="21" id="IfTheSuspensionHasBeenResolvedProvideFurtherInformation" class="fills_decoration_textarea" placeholder="If The Suspension Has Been Resolved Provide Further Information..."></textarea>
+</div>
+<mark>if the suspension has not been resolved, school staff will refer to student services suspension</mark>
+
+<div class="row">
+<label for="language_type"><span style="color:red;text-decoration:none;">*</span> Address of last school, country </label>: 
+<select id="language_type" class="language_type">
+<option value="English" class="language_type_english" id="language_type_english" name="">England</option>
+<option value="French" class="language_type_french" id="language_type_french" name="">France</option>
+<option value="Portuguese" class="language_type_portuguese" id="language_type_portuguese" name="">Nigeria</option>
+<option value="Asia" class="language_type_asia" id="language_type_asia" name="">United State of America</option>
+</select>
+</div>
+
+<div class="row">
+<label for="language_type"><span style="color:red;text-decoration:none;">*</span> Address of last school, state </label>: 
+<select id="language_type" class="language_type">
+<option value="English" class="language_type_english" id="language_type_english" name=""></option>
+<option value="French" class="language_type_french" id="language_type_french" name=""></option>
+<option value="Portuguese" class="language_type_portuguese" id="language_type_portuguese" name=""></option>
+<option value="Asia" class="language_type_asia" id="language_type_asia" name=""></option>
+</select>
+</div>
+
+<div class="row">
+<label for="language_type"><span style="color:red;text-decoration:none;">*</span> Address of last school, city </label>: 
+<select id="language_type" class="language_type">
+<option value="English" class="language_type_english" id="language_type_english" name=""></option>
+<option value="French" class="language_type_french" id="language_type_french" name=""></option>
+<option value="Portuguese" class="language_type_portuguese" id="language_type_portuguese" name=""></option>
+<option value="Asia" class="language_type_asia" id="language_type_asia" name=""></option>
+</select>
+</div>
+
+<div class="row">
+<label for="AddressOfLastSchool" class="textarea-label"><span style="color:red;text-decoration:none;">*</span>Address of last school, Province :</label> <textarea value="" name="" rows="1" cols="21" id="AddressOfLastSchool" class="fills_decoration_textarea" placeholder="Address Of Last School.."></textarea>
+</div>
+
+<div class="row">
+<label for="ReasonForLeavingLastSchool" class="textarea-label"><span style="color:red;text-decoration:none;">*</span> Reason For Leaving Last School :</label> <textarea value="" name="" rows="1" cols="21" id="ReasonForLeavingLastSchool" class="fills_decoration_textarea" placeholder="Reason For Leaving Last School ..."></textarea>
+</div>
+
+</div>
+
+<!--<div id="part5" class="form_parts">
+<div class="profile-images">
+<img src="contact.png" id="upload-img" title="Upload Picture">
+</div>
+<div class="custom-file">
+<label for="fileupload">Upload File</label>
+<input type="file" id="fileupload">
+
+</div>
+</div>--->
 
 
 
@@ -352,13 +420,27 @@ window.location="newregistration.html";
 
 
 <script src="script/sis.js"></script>
-<script src="script/jquery.js"></script>
+<script src="jquery.js"></script>
 
 
 <script>
 
 $(document).ready(function(){
-$("#navbutton-one").hide();
+
+
+$("#navbutton-one").show();
+
+
+
+
+
+//Profile picture change event/statement begins
+$("#fileupload").change(function(event){
+var x = URL.createObjectURL(event.target.files[0]);
+$("#upload-img").attr("src", x);
+console.log(event);
+});
+//Profile picture change event/statement ends
 
 
 
@@ -494,6 +576,17 @@ return false;}
 
 return true;
 };
+
+
+function validateFileupload() {
+	var fileName = document.getElementById("fileupload");
+	var idxDot = fileName.lastIndexOf(".") + 1;
+	var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+	if (extFile=="jpg" || extFile=="jpeg" || extFile=="png") {
+	}else{ alert("Only jpg/ jpeg and png files allowed!");
+	}
+
+}
 </script>
 
 </body>

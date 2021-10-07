@@ -2,12 +2,14 @@
 <html>
 
 <head>
+<meta charset="utf-8">
 <title>SCHOOL INFORMATION SYSTEM</title>
 <meta name="viewport" content="width=device-width initial-scale=1"/>
 
     <!-- Frameworks links, Stylesheet links, JavaScript links -->
 <link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
+<link rel="stylesheet" href="fontawesome/fontawesome-free-5.14.0-web/css/fontawesome.css"/>
 <link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/bootstrap/bootstrap/css/bootstrap.css"/>
 <link rel="stylesheet" href="stylesheets/sis.css"/>
 
@@ -36,8 +38,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>--->
-
 
 
 
@@ -45,10 +45,13 @@
 
 <style>
 
-
-*{font-family: 'Segoe UI', Tahoma, sans-serif;}
+*{list-style-type:none;font-family:Raleway-Regular;letter-spacing:1px;}
+@font-face{
+src:url(fontawesome/Raleway/static/Raleway-Regular.ttf);
+font-family:Raleway-Regular;
+}
 .header-first-div{background:linear-gradient(grey,skyblue);height:23px;}
-main{background:linear-gradient(grey,skyblue);height:100px;}
+main{background:linear-gradient(white,white,white,skyblue);height:100px;}
 footer{/*background:linear-gradient(rgb(0,0,5), rgba(0,0,1,0.5));*/border:1px grove black;height:30px;margin-top:10vh;}
 h3{text-align:center; font-size:30px;}
 h5{text-align:center;font-size:12px;}
@@ -61,8 +64,12 @@ input {display:table;border:1px solid black;margin-left:auto;margin-right:auto;w
 select{display:table;border:1px solid black;margin-left:auto;margin-right:auto;width:70%;height:25px;font-size:15px;font-weight:bold;font-family:new roman;}
 .input_typeDrp{width:70%; font-size:15px; font-weight:bold; font-family:new roman; height:25px; }
 .subMenu-link-text-color{padding:20px}
+#UATsign{float:right;margin-top:-100px;margin-right:30%;font-size:100px}
+@media(max-width:700px){
+form{display:table;margin-left:auto;margin-right:66.5%;background:linear-gradient(grey,skyblue);padding:2%;width:95%;}
+#UATsign{float:right;margin-top:-100px;margin-right:0%;font-size:20px}
 
-
+}
 
 
 </style>
@@ -99,11 +106,16 @@ alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
 
 <body id="body">
 
-<div class="container-fluid header-first-div"><h6>Welcome!! to school information system application</h6><script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script></div>
+
+
+
+
+
 
 <header class="container-fluid">
 
 <form action="homepage.html" method="post" onsubmit="return validateSigninDetailsB4PHP()">
+<div class="container-fluid header-first-div"><h6>Welcome!! to school information system application &nbsp <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script><div id="time"></div></h6></div>
 
 <h3><a href="index.html" style="color:black;"><b>Sign In</b> <i class="fas fa-sign-out-alt webapplication-icons" id="webapplication-icons-signin"></i></a></h3>
 
@@ -123,7 +135,7 @@ alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
 
 <!--<label for="status" class="label" title="choose your category">Category</label>-->
 <select id="status" value="" title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student.">
-<option value="" type="status" class="input_typeDrp" placeholder="category"></option>
+<option value="" type="status" class="input_typeDrp" placeholder="category" id="category"></option>
 <option value="administration" type="status" class="input_typeDrp" id="admin_category">Administrative</option>
 <option value="teacher" type="status" class="input_typeDrp" id="teacher_category">Teacher</option>
 <option value="student" type="status" class="input_typeDrp" id="student_category">Student</option>
@@ -134,6 +146,33 @@ alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
 
 
 <script>
+
+setInterval(()=>{
+const time = document.querySelector("#time");
+let date = new Date();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+let day_night = "AM";
+if(hours > 12) {
+day_night ="PM";
+hours = hours - 12;
+}
+if(hours < 10) {
+hours = "0" + hours;
+}
+if(minutes < 10) {
+minutes = "0" + minutes;
+}
+if(seconds < 10) {
+seconds = "0" + seconds;
+}
+time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
+});
+
+
+var categories = document.getElementById("category");
+categories.innerHTML="Choose your category";
 
 var UserName = document.getElementById("username");
 var PassWord = document.getElementById("password");
@@ -161,7 +200,9 @@ return true;
 };
 
 </script>
-
+<div id="UATsign">
+<p class="uat" title=" User Acceptance Testing (UAT)">U A T<p>
+</div>
 
 </header>
 
@@ -169,8 +210,8 @@ return true;
 
 <main>
 
-<div id="background_image"><img src="logo/sislogo.png"></div>
-<h5 title="Develop by the Healthy Harvester Technologies"><b>&copy School Information System </b></h5>
+<div id="background_image"><!---<img src="logo/sislogo.png">---></div>
+<h5 title="Develop by the Healthy Harvester Technologies"><b>&copy 2021 School Information System version 1.1</b></h5>
 
 
 </main>

@@ -2,27 +2,26 @@
 <html>
 
 <head>
+<meta charset="utf-8">
 <title>SCHOOL INFORMATION SYSTEM</title>
 <meta name="viewport" content="width=device-width initial-scale=1"/>
 
     <!-- Frameworks links, Stylesheet links, JavaScript links -->
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/bootstrap/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" href="fontawesome/fontawesome-free-5.14.0-web/css/fontawesome.css"/>
 <link rel="stylesheet" href="stylesheets/sis.css"/>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<!---<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">----->
 
 
 
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
+<!----<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.min.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.js"></script>
 <script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.min.js"></script>
+<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.min.js"></script>---->
 <script src="script/sis.js"></script>
 <script src="sisFormOperator.js"></script>
 
@@ -30,46 +29,52 @@
 
 <!-- Optional JavaScript; choose one of the two! -->    <!-- Option 1: Bootstrap Bundle with Popper -->    <!-- Option 2: Separate Popper and Bootstrap JS -->
 
-<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
+<!---<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--<script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>--->
+script src="//code.jivosite.com/widget/dk0SSXTGgU" async></script>--->
 
 
 <style>
 
-*{background:linear-gradient(grey,skyblue);list-style-type:none;font-family: 'Segoe UI', Tahoma, sans-serif;}
+
+*{list-style-type:none;font-family:Raleway-Regular;letter-spacing:1px;}
+@font-face{
+src:url(fontawesome/Raleway/static/Raleway-Regular.ttf);
+font-family:Raleway-Regular;
+}
 h3{text-align:center;} 
 h4{text-align:center;}
 h5{text-align:center;font-size:10px;}
+.dropdown-wrapper {margin:-10px;background:linear-gradient(grey,skyblue);height:50px;}
 .dropdown-wrapper ul ul {display:none;}
 .dropdown-wrapper ul li:hover > ul {display: block;}
 .dropdown-wrapper ul li:hover > ul button{transition: all 1.5s ease-in-out 2s;}
-/*transition: background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);transition-property: background-color;
+transition: background-color 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);transition-property: background-color;
     transition-duration: 1.5s;
     transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
     transition-delay: 0s;
-	*/
-	
-.drop-down-menu-header{width:113px;}
+
+.drop-down-menu-header{width:100px;}
 .displayonoff{visibility:visible}
 #links_decoration{position:relative; margin-left:-30px;margin-top:2px;}
-.drop-down-menu-content{width:auto;position:relative; background:white;margin-left:auto; margin-right:auto;margin-top:20px;}
-.drop-down-menu-list{position:relative; margin-left:-65px;margin-top:20px;border-right-radius:20%;}
+.drop-down-menu-content{width:auto;position:relative; background:white;margin-left:auto; margin-right:auto;margin-top:;}
+.drop-down-menu-list{position:relative; margin-left:-75px;margin-top:;border-right-radius:20%;}
 
 
 .contain{margin-left:auto;margin-right:auto;width:100%;}
-.main_content{width:100%;height:5vh;border:2px solid black;border-top:none;border-left:none;display:inline;position:fixed;}
+.main_content{width:100%;height:2vh;border:;border-top:none;border-left:none;display:inline;position:fixed;}
 .links{line-height:2em;}
-.main_content, .links{display:flex;}
-button{width:113px;height:30px;}
-.links_decoration{font-size:12px;font-weight:bold;color:black;} 
+.main_content, .links{display:flex;margin-top:-8px;}
+button{width:100px;height:30px;background:linear-gradient(grey,skyblue);}
+.links_decoration{font-size:10px;font-weight:bold;color:black;} 
 .links_decoration:hover{background:linear-gradient(white,green,white);color:skyblue;}
+/*.webapplication-icons{float:left}*/
 .webapplication-icons:hover{color:red;font-size:20px}
 a{text-decoration:none;}
-#logout-button{margin-top:3px;width:80px;color:skyblue;font-weight:bolder;font-size:12px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;}
+#logout-button{margin-left:-20px;margin-top:3px;width:80px;color:skyblue;font-weight:bolder;font-size:12px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;}
 #logout-button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
 content{float:right;background:white;width:100%;height:100vh;margin-top:30px;}
 
@@ -78,8 +83,8 @@ content{float:right;background:white;width:100%;height:100vh;margin-top:30px;}
 
 <script>
 
-var signOutBut = document.getElementById("logout-button");
-signOutBut.style.backgroundColor="black";
+//var signOutBut = document.getElementById("logout-button");
+//signOutBut.style.backgroundColor="black";
 
 
 </script>
@@ -340,18 +345,16 @@ signOutBut.style.backgroundColor="black";
 
 
 
+<div class="dropdown-wrapper">
+<ul class="drop-down-menu-header" id="Sign-out">
+<li class="drop-down-head"><button onclick="LogOut()" class="links_decoration" id="logout-button"> Sign Out<i class="fas fa-sign-out-alt webapplication-icons" id="webapplication-icons-logout"></i></button></li>
+</ul>
+</div>
 
-
-
-
-
-
-
-
-
-<button type="button" onclick="LogOut()" id="logout-button">Sign Out <i class="fas fa-sign-out-alt webapplication-icons" id="webapplication-icons-logout"></i></button>
-
-
+<div style="display:flex; margin-top:5px;background:linear-gradient(grey,skyblue);height:35px; border-radius:5%; margin-left:12px; width:350px;">
+&nbsp&nbsp&nbsp&nbsp<div id="time"></div>, <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script> 
+<i class="fa-wordpress"></i>
+</div>
 </div>
 
 </div>
@@ -366,7 +369,12 @@ signOutBut.style.backgroundColor="black";
 
 
 
-
+<!---.fa,
+.fas,
+.far,
+.fal,
+.fad,
+.fab {--->
 
 
 
@@ -395,6 +403,30 @@ $(".dropdown-wrapper: .drop-down-menu-header").toggleClass("displayonoff");
 
 });
 
+});
+
+
+setInterval(()=>{
+const time = document.querySelector("#time");
+let date = new Date();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+let day_night = "AM";
+if(hours > 12) {
+day_night ="PM";
+hours = hours - 12;
+}
+if(hours < 10) {
+hours = "0" + hours;
+}
+if(minutes < 10) {
+minutes = "0" + minutes;
+}
+if(seconds < 10) {
+seconds = "0" + seconds;
+}
+time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
 });
 
 </script>
