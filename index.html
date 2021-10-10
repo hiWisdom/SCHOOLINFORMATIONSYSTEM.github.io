@@ -25,31 +25,58 @@
 #UATsign{float:right;margin-top:-100px;margin-right:0%;font-size:20px}
 #login_button{color:skyblue;font-size:16px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;} #login_button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
 
+.spinner{width:80px; height:80px; border: 3.5px solid #f3f3f3; border-top: 5px solid #89c557; border-radius: 100%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; animation:spin 15s 1s infinite linear alternate;}
+@keyframes spin {
+from{transform: rotate(0deg);}
+to{transform:rotate(300deg);}
+}
 
+#overlay{height:100vh;width:100%;background:rgba(0, 0, 0, .2);}
+
+#login_button{margin:0px 5px;}
 </style>
 </head>
 
 
 
 <body class="login no-js login-action-login wp-core-ui  locale-en-us">
-<script type="text/javascript">
+
+
+
+
+    <!---INDEX LOAD EVENT BEGINS-->
+    <div id="overlay">
+    <div class="spinner" id="overlay-insiderA">
+    <div class="spinner" id="overlay-insiderB">
+    <div class="spinner">
+        <div id="loading-event-image"><p style="color:black; justify-content: center;position: relative;margin-top:10%;margin-left:25%;font-size:9px">School<br>Information<br>System<br>Application<br>Loading . . .</p></div>
+    </div>
+    </div>
+    </div>
+           
+    </div>
+    <!---INDEX LOAD EVENT ENDS-->
+        
+
+
+<!---<script type="text/javascript">
 document.body.className = document.body.className.replace('no-js','js');
-</script>
+</script>---->
 
     <div id="login">
 
     <h1 title="Powered by Healthy Harvester Group"><a href=""><img src="logo/sislogo.png"/></a></h1>
 
-    <h6>Welcome!! to school information system application &nbsp <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script><div id="time"></div></h6>
+    <h6 title="No1. School Information System in it Community.">Welcome!! to school information system application &nbsp <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script><div id="time"></div></h6>
    
     <form name="loginform" id="loginform" action="homepage.html" method="post" onsubmit="return validateSigninDetailsB4PHP()"><!---http://localhost/wordpress/wp-login.php---->
         <p>
-            <label for="user_login">Username or Email Address</label>
-            <input type="text" title="input Username or Email Address" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
+            <label for="user_login" title="Input Username or Email Address">Username or Email Address</label>
+            <input type="text" title="Input Username or Email Address" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
         </p>
 
         <div class="user-pass-wrap">
-            <label for="user_pass">Password</label>
+            <label for="user_pass" title="Input Password">Password</label>
             <div class="wp-pwd">
                 <input type="password" title="Input Password" name="pwd" id="user_pass" class="input password-input" value="" size="20" />
                 <button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Show password">
@@ -58,7 +85,7 @@ document.body.className = document.body.className.replace('no-js','js');
             </div>
         </div>
         <p>
-        <label for="user_pass">Entry Site</label>
+        <label title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student." for="status">Entry Site</label>
         <br>
             <select id="status" value="" style="width:270px;height:1cm;"  title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student.">
             <option value="" type="status" class="input input_typeDrp" placeholder="category" id="category"></option>
@@ -68,20 +95,28 @@ document.body.className = document.body.className.replace('no-js','js');
             </select>
         </p>  
         <br>  
-            <p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> <label for="rememberme">Remember Me</label></p>
+           <p class="forgetmenot"><input name="rememberme" title="By clicking on the checkbox this browser will save your login details to local storage, database, cookies and will remenber your login details anytime you type a responsive alphabet relating to your user account login." type="checkbox" id="rememberme" value="forever" /> <label title="By clicking on the checkbox this browser will save your login details to local storage, database, cookies and will remenber your login details anytime you type a responsive alphabet relating to your user account login." for="rememberme" style="font-size:10px;">Remember Me</label></p>
         
         <p class="submit">
-            <input type="submit" name="wp-submit" id="login_button" class="button button-primary button-large" value="Log In"/>
+            <input type="reset" title="Reset all what you have type here" name="wp-submit" id="login_button" class="button button-primary button-large" value="Reset"/>
+            <input type="submit" title="Login to Verbal Reasoning School Information System" name="wp-submit" id="login_button" class="button button-primary button-large" value="Log In"/>
             <!--<input type="hidden" name="redirect_to" value="http://localhost/wordpress/wp-admin/" />
             <input type="hidden" name="testcookie" value="1" />-->
         </p>
     </form>
 
-                <p id="nav"> <a href="">Lost your password?</a></p>
-                <p id="backtoblog"><a href="">&larr; Go to School Information System</a></p>
+                <p id="nav" title="Contact Admin to Reset or Reset via Mail."> <a href="">Lost your password?</a></p>
+                <p id="backtoblog" title="F A Q, Readmore, Need Assistance, Contact us."><a href="">&larr; Go to School Information System</a></p>
   
 </div>
 <script>
+
+
+
+
+
+    //DATE AND TIME SCRIPT BEGINS
+
 setInterval(()=>{
 const time = document.querySelector("#time");
 let date = new Date();
@@ -105,8 +140,14 @@ seconds = "0" + seconds;
 time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
 });
 
+    //DATE AND TIME SCRIPT ENDS
 
 
+
+
+
+
+//CLIENT SIDE FORM VALIDATION SCRIPT BEGINS 
 
 var UserName = document.getElementById("user_login");
 var PassWord = document.getElementById("user_pass");
@@ -136,6 +177,30 @@ return false;}
 
 return true;
 };
+
+//CLIENT SIDE FORM VALIDATION SCRIPT ENDS 
+
+
+
+
+
+//LOAD EVENT SCRIPT BEGINS
+
+
+//get login page and hide till server loads completely.
+var sisloginpage = document.getElementById("login");
+sisloginpage.style.display="none";
+
+//loading decoration.
+var overlay = document.getElementById("overlay");
+
+
+//load.
+window.addEventListener('load', function(){
+overlay.style.display="none";
+sisloginpage.style.display="block";
+});
+//LOAD EVENT SCRIPT ENDS
 
 </script>
 <script src="script/sis.js"></script>
