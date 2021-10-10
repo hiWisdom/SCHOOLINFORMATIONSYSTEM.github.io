@@ -1,152 +1,87 @@
-<!doctype html>
-<html>
 
+
+
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta charset="utf-8">
-<title>SCHOOL INFORMATION SYSTEM</title>
-<meta name="viewport" content="width=device-width initial-scale=1"/>
-
-    <!-- Frameworks links, Stylesheet links, JavaScript links -->
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/www.hsam/bootstrap/bootstrap/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/fontawesome/fontawesome-free-5.14.0-web/css/all.css"/>
-<link rel="stylesheet" href="fontawesome/fontawesome-free-5.14.0-web/css/fontawesome.css"/>
-<link rel="stylesheet" href="file:///C:/Users/HP/Desktop/onnet.github.io/bootstrap/bootstrap/css/bootstrap.css"/>
-<link rel="stylesheet" href="stylesheets/sis.css"/>
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-
-
-
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.min.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.js"></script>
-<script src="file:///C:/Users/HP/Desktop/domblog.github.io/bootstrap/bootstrap/js/bootstrap.esm.min.js"></script>
-<script src="script/sis.js"></script>
-<script src="script/sisFormOperator.js"></script>
-
-
-<!-- Optional JavaScript; choose one of the two! -->    <!-- Option 1: Bootstrap Bundle with Popper -->    <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-<script src="https://kit.fontawesome.com/62f72df755.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Log In &lsaquo; school information system &#8212; SCHOOL_INFORMATION_SYSTEM</title>
+<meta name='robots' content='max-image-preview:large, noindex, noarchive' />
+<meta name='referrer' content='strict-origin-when-cross-origin' />
+<meta name="viewport" content="width=device-width" />
+<!--------
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='dashicons-css'  href='http://localhost/wordpress/wp-includes/css/dashicons.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='http://localhost/wordpress/wp-includes/css/buttons.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='forms-css'  href='http://localhost/wordpress/wp-admin/css/forms.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='l10n-css'  href='http://localhost/wordpress/wp-admin/css/l10n.min.css?ver=5.8.1' media='all' />
+---------->
+<link rel='stylesheet' id='buttons-css'  href='stylesheets/buttons.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='login-css'  href='stylesheets/login.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='stylesheets/dashicons.min.css?ver=5.8.1' media='all' />
+<link rel='stylesheet' id='forms-css'  href='stylesheets/forms.min.css?ver=5.8.1' media='all' />
 
 <style>
-
-*{list-style-type:none;font-family:Raleway-Regular;letter-spacing:1px;}
-@font-face{
-src:url(fontawesome/Raleway/static/Raleway-Regular.ttf);
-font-family:Raleway-Regular;
-}
-.header-first-div{background:linear-gradient(grey,skyblue);height:23px;}
-main{background:linear-gradient(white,white,white,skyblue);height:100px;}
-footer{/*background:linear-gradient(rgb(0,0,5), rgba(0,0,1,0.5));*/border:1px grove black;height:30px;margin-top:10vh;}
-h3{text-align:center; font-size:30px;}
-h5{text-align:center;font-size:12px;}
-#background_image{float:left;margin-left:20%;}
-img{width:100%;height:120px;}
-.label{display:block;color:black;font-size:17px;}
-#login_button{color:skyblue;font-size:16px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;} #login_button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
-form{display:table;margin-left:auto;margin-right:66.5%;background:linear-gradient(grey,skyblue);padding:2%;width:35%;}
-input {display:table;border:1px solid black;margin-left:auto;margin-right:auto;width:70%;height:25px;font-size:15px;font-weight:bold;font-family:new roman;}
-select{display:table;border:1px solid black;margin-left:auto;margin-right:auto;width:70%;height:25px;font-size:15px;font-weight:bold;font-family:new roman;}
-.input_typeDrp{width:70%; font-size:15px; font-weight:bold; font-family:new roman; height:25px; }
-.subMenu-link-text-color{padding:20px}
-#UATsign{float:right;margin-top:-100px;margin-right:30%;font-size:100px}
-@media(max-width:700px){
-form{display:table;margin-left:auto;margin-right:66.5%;background:linear-gradient(grey,skyblue);padding:2%;width:95%;}
 #UATsign{float:right;margin-top:-100px;margin-right:0%;font-size:20px}
-
-}
+#login_button{color:skyblue;font-size:16px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;} #login_button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
 
 
 </style>
-
-
-<script>
-
-var time = new Date().getHours();
-if( time < 20 ){
-alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
-};
-else if( time > 20 ){
-alert("HELLO YOU ARE WELCOME TO SCHOOL INFORMATION SYSTEM , THANK YOU.");
-};
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
 
 
-<body id="body">
 
+<body class="login no-js login-action-login wp-core-ui  locale-en-us">
+<script type="text/javascript">
+document.body.className = document.body.className.replace('no-js','js');
+</script>
 
+    <div id="login">
 
+    <h1 title="Powered by Healthy Harvester Group"><a href=""><img src="logo/sislogo.png"/></a></h1>
 
+    <h6>Welcome!! to school information system application &nbsp <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script><div id="time"></div></h6>
+   
+    <form name="loginform" id="loginform" action="homepage.html" method="post" onsubmit="return validateSigninDetailsB4PHP()"><!---http://localhost/wordpress/wp-login.php---->
+        <p>
+            <label for="user_login">Username or Email Address</label>
+            <input type="text" title="input Username or Email Address" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" />
+        </p>
 
+        <div class="user-pass-wrap">
+            <label for="user_pass">Password</label>
+            <div class="wp-pwd">
+                <input type="password" title="Input Password" name="pwd" id="user_pass" class="input password-input" value="" size="20" />
+                <button type="button" class="button button-secondary wp-hide-pw hide-if-no-js" data-toggle="0" aria-label="Show password">
+                    <span class="dashicons dashicons-visibility" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <p>
+        <label for="user_pass">Entry Site</label>
+        <br>
+            <select id="status" value="" style="width:270px;height:1cm;"  title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student.">
+            <option value="" type="status" class="input input_typeDrp" placeholder="category" id="category"></option>
+            <option value="administration" type="status" class="input input_typeDrp" id="admin_category">Administrative</option>
+            <option value="teacher" type="status" class="input input_typeDrp" id="teacher_category">Teacher</option>
+            <option value="student" type="status" class="input input_typeDrp" id="student_category">Student</option>
+            </select>
+        </p>  
+        <br>  
+            <p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> <label for="rememberme">Remember Me</label></p>
+        
+        <p class="submit">
+            <input type="submit" name="wp-submit" id="login_button" class="button button-primary button-large" value="Log In"/>
+            <!--<input type="hidden" name="redirect_to" value="http://localhost/wordpress/wp-admin/" />
+            <input type="hidden" name="testcookie" value="1" />-->
+        </p>
+    </form>
 
-
-<header class="container-fluid">
-
-<form action="homepage.html" method="post" onsubmit="return validateSigninDetailsB4PHP()">
-<div class="container-fluid header-first-div"><h6>Welcome!! to school information system application &nbsp <script>var todayDate = new Date(); var shortDate = todayDate.toDateString(); document.write(shortDate);</script><div id="time"></div></h6></div>
-
-<h3><a href="index.html" style="color:black;"><b>Sign In</b> <i class="fas fa-sign-out-alt webapplication-icons" id="webapplication-icons-signin"></i></a></h3>
-
-
-<BR>
-<BR>
-<BR>
-
-
-
-<!--<label for="username" class="label" title="username is firstname and lastname">User Name</label>--->
-<input value="" title="username is firstname and lastname" type="text" class="input_typeA" id="username" placeholder="username"/>
-<br>
-<!--<label for="password" class="label" title="password is access-code to school information system and must be more than ten characters">Password</label>--->
-<input value="" title="password is access-code to school information system and must be more than ten characters" type="password" class="input_typeB" id="password" placeholder="password"/>
-<br>
-
-<!--<label for="status" class="label" title="choose your category">Category</label>-->
-<select id="status" value="" title="If you are a Administrative choose administrative, If you are a Teacher choose teacher, If you are a Student choose student.">
-<option value="" type="status" class="input_typeDrp" placeholder="category" id="category"></option>
-<option value="administration" type="status" class="input_typeDrp" id="admin_category">Administrative</option>
-<option value="teacher" type="status" class="input_typeDrp" id="teacher_category">Teacher</option>
-<option value="student" type="status" class="input_typeDrp" id="student_category">Student</option>
-</select>
-<br>
-<input type="submit" value="Sign-In" id="login_button" title="Log-In"/>
-</form>
-
-
+                <p id="nav"> <a href="">Lost your password?</a></p>
+                <p id="backtoblog"><a href="">&larr; Go to School Information System</a></p>
+  
+</div>
 <script>
-
 setInterval(()=>{
 const time = document.querySelector("#time");
 let date = new Date();
@@ -171,27 +106,30 @@ time.textContent = hours + ":" + minutes + ":" + seconds + " " + day_night;
 });
 
 
-var categories = document.getElementById("category");
-categories.innerHTML="Choose your category";
 
-var UserName = document.getElementById("username");
-var PassWord = document.getElementById("password");
+
+var UserName = document.getElementById("user_login");
+var PassWord = document.getElementById("user_pass");
 var categoryVerification = document.getElementById("status");
 
 function validateSigninDetailsB4PHP() {
 
-if(UserName.value==""){alert("Please Fill Username");
+if (UserName.value==""){
+    alert("Please Fill Username");
 UserName.focus();
 UserName.style.border="1px solid red";
-return false;}
+return false;
+}
 
-if (PassWord.value=="" || PassWord.value.length <= 9 ){alert("Please Fill password and ensure characters is 10 or more");
+if (PassWord.value=="" || PassWord.value.length <= 9 ){
+    alert("Please Fill password and ensure characters is 10 or more");
 PassWord.focus();
 PassWord.style.border="1px solid red";
-return false;}
+return false;
+}
 
 
-if (categoryVerification.value==""){alert("Choose your category");
+if (categoryVerification.value==""){alert("Choose your Entry Site");
 PassWord.focus();
 PassWord.style.border="1px solid red";
 return false;}
@@ -200,28 +138,62 @@ return true;
 };
 
 </script>
-<div id="UATsign">
-<p class="uat" title=" User Acceptance Testing (UAT)">U A T<p>
-</div>
-
-</header>
+<script src="script/sis.js"></script>
+<script src="script/sisFormOperator.js"></script>
+   <div class="clear"></div>
 
 
-
-<main>
-
-<div id="background_image"><!---<img src="logo/sislogo.png">---></div>
-<h5 title="Develop by the Healthy Harvester Technologies"><b>&copy 2021 School Information System version 1.1</b></h5>
-
-
-</main>
-
-
-
-<footer class="container-fluid">
-</footer>
+<!-------
+    <script type="text/javascript">
+        function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+wp_attempt_focus();
+if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
+           
+        </div>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script src='<!----http://localhost/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script id='zxcvbn-async-js-extra'>
+var _zxcvbnSettings = {"src":"http:\/\/localhost\/wordpress\/wp-includes\/js\/zxcvbn.min.js"};
+</script>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/zxcvbn-async.min.js?ver=1.0' id='zxcvbn-async-js'></script>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/dist/hooks.min.js?ver=a7edae857aab69d69fa10d5aef23a5de' id='wp-hooks-js'></script>
+<script src='<!-------http://localhost/wordpress/wp-includes/js/dist/i18n.min.js?ver=5f1269854226b4dd90450db411a12b79' id='wp-i18n-js'></script>
+<script id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id='password-strength-meter-js-extra'>
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+</script>
+<script id='password-strength-meter-js-translations'>
+( function( domain, translations ) {
+var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+localeData[""].domain = domain;
+wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script src='<!------http://localhost/wordpress/wp-admin/js/password-strength-meter.min.js?ver=5.8.1' id='password-strength-meter-js'></script>
+<script src='<!------http://localhost/wordpress/wp-includes/js/underscore.min.js?ver=1.13.1' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wordpress\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='http://localhost/wordpress/wp-includes/js/wp-util.min.js?ver=5.8.1' id='wp-util-js'></script>
+<script id='user-profile-js-extra'>
+var userProfileL10n = {"user_id":"0","nonce":"f5e772ff1e"};
+</script>
+<script id='user-profile-js-translations'>
+( function( domain, translations ) {
+var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+localeData[""].domain = domain;
+wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script src='http://localhost/wordpress/wp-admin/js/user-profile.min.js?ver=5.8.1' id='user-profile-js'></script>
+<script>
+/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+---->
 
 </body>
-
-
 </html>
+

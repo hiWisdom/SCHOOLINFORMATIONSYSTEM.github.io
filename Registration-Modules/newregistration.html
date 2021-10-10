@@ -43,7 +43,7 @@ window.location="search-registration.html";
 </nav>--->
 
 
-<form method="post" action="homepage.html" id="regForm" onsubmit="return siSregistrationFormValidation()">
+<form method="post" action="send.php" id="regForm" onsubmit="return siSregistrationFormValidation()">
 
 <header>
 
@@ -116,25 +116,25 @@ window.location="newregistration.html";
 
 
 <div class="row">
-<label for="firstname"><span style="color:red;text-decoration:none;">*</span> First Name </label>: <input value="" name="" type="text" id="firstname" class="fills_decoration">
+<label for="firstname"><span style="color:red;text-decoration:none;">*</span> First Name </label>: <input value="" name="firstname" type="text" id="firstname" class="fills_decoration">
 </div>
 
 
 <div class="row">
-<label for="secondname"><span style="color:red;text-decoration:none;">*</span> Middle Name </label>: <input value="" name="" type="text" id="secondname" class="fills_decoration">
+<label for="secondname"><span style="color:red;text-decoration:none;">*</span> Middle Name </label>: <input value="" name="secondname" type="text" id="secondname" class="fills_decoration">
 </div>
 
 
 <div class="row">
-<label for="lastname"><span style="color:red;text-decoration:none;">*</span> Last Name </label>: <input value="" name="" type="text" id="lastname" class="fills_decoration">
+<label for="lastname"><span style="color:red;text-decoration:none;">*</span> Last Name </label>: <input value="" name="lastname" type="text" id="lastname" class="fills_decoration">
 </div>
 
 
 <div class="row">
 <label for="gender_type"><span style="color:red;text-decoration:none;">*</span> Gender </label>: 
 <select id="gender_type" class="gender_type">
-<option value="Male" class="gender_type_male" id="gender_type_male" name="">Male</option>
-<option value="Female" class="gender_type_female" id="gender_type_female" name="">Female</option>
+<option value="Male" class="gender_type_male" id="gender_type_male" name="male">Male</option>
+<option value="Female" class="gender_type_female" id="gender_type_female" name="female">Female</option>
 </select>
 </div>
 
@@ -142,37 +142,37 @@ window.location="newregistration.html";
 <div class="row">
 <label for="marital_type"><span style="color:red;text-decoration:none;">*</span> Marital Status </label>: 
 <select id="marital_type" class="marital_type">
-<option value="Single" class="marital_type_single" id="marital_type_single" name="">Single</option>
-<option value="Married" class="marital_type_married" id="marital_type_married" name="">Married</option>
-<option value="Divorced" class="marital_type_divorced" id="marital_type_divorced" name="">Divorced</option>
-<option value="Window" class="marital_type_window" id="marital_type_window" name="">Window</option>
-<option value="Windower" class="marital_type_windower" id="marital_type_windower" name="">Windower</option>
+<option value="Single" class="marital_type_single" id="marital_type_single" name="single">Single</option>
+<option value="Married" class="marital_type_married" id="marital_type_married" name="married">Married</option>
+<option value="Divorced" class="marital_type_divorced" id="marital_type_divorced" name="divorced">Divorced</option>
+<option value="Window" class="marital_type_window" id="marital_type_window" name="window">Window</option>
+<option value="Windower" class="marital_type_windower" id="marital_type_windower" name="windower">Windower</option>
 </select>
 </div>
 
 
 <div class="row">
-<label for="dob"><span style="color:red;text-decoration:none;">*</span> Date of Birth </label>: <input value="" name="" type="date" id="dob" class="fills_decoration">
+<label for="dob"><span style="color:red;text-decoration:none;">*</span> Date of Birth </label>: <input value="" name="dob" type="date" id="dob" class="fills_decoration">
 </div>
 
 
 <div class="row">
-<label for="nationality"><span style="color:red;text-decoration:none;">*</span> Nationality </label>: <input value="" name="" type="text" id="nationality" class="fills_decoration">
+<label for="nationality"><span style="color:red;text-decoration:none;">*</span> Nationality </label>: <input value="" name="nationality" type="text" id="nationality" class="fills_decoration">
 </div>
 
 
 <div class="row">
-<label for="stateoforigin"><span style="color:red;text-decoration:none;">*</span> State Of Origin </label>: <input value="" name="" type="text" id="stateoforigin" class="fills_decoration">
+<label for="stateoforigin"><span style="color:red;text-decoration:none;">*</span> State Of Origin </label>: <input value="" name="stateoforigin" type="text" id="stateoforigin" class="fills_decoration">
 </div>
 
 
 <div class="row">
 <label for="language_type"><span style="color:red;text-decoration:none;">*</span> Language Spoken </label>: 
 <select id="language_type" class="language_type">
-<option value="English" class="language_type_english" id="language_type_english" name="">English</option>
-<option value="French" class="language_type_french" id="language_type_french" name="">French</option>
-<option value="Portuguese" class="language_type_portuguese" id="language_type_portuguese" name="">Portuguese</option>
-<option value="Asia" class="language_type_asia" id="language_type_asia" name="">Asia</option>
+<option value="English" class="language_type_english" id="language_type_english" name="English">english</option>
+<option value="French" class="language_type_french" id="language_type_french" name="french">French</option>
+<option value="Portuguese" class="language_type_portuguese" id="language_type_portuguese" name="portuguese">Portuguese</option>
+<option value="Asia" class="language_type_asia" id="language_type_asia" name="asia">Asia</option>
 </select>
 </div>
 

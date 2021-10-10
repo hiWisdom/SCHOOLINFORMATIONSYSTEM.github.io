@@ -1,6 +1,7 @@
 
 .subMenu-link-text-color{padding:20px}
 
+#login_button{color:skyblue;font-size:16px;border:none;box-sizing:border-box;background:linear-gradient(white,green,white);border-radius:5%;} #login_button:hover{background:linear-gradient(grey,skyblue);color:linear-gradient(white,green,white);}
 
 
 
