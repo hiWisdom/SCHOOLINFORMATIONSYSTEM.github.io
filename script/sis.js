@@ -74,7 +74,7 @@ if(accessSelector.id === "student_category") {InventoryAccess.style.display="non
 
 
 
-
+//up script is the use of javascript to build identify user access on client side.
 
 
 
@@ -113,13 +113,13 @@ var categoryVerification = document.getElementById("status");
 
 
 function LogOut() {
-window.location="index.html";
+window.location="index.php";
 }
 
 
 
 function Home() {
-	window.location="homepage.html";
+	window.location="homepage.php";
 }
 
 
@@ -152,6 +152,35 @@ function Home() {
 var createPage = document.createElement("iframe");
 
 
+
+
+function administration() {
+
+
+var createNewPage = document.getElementById("createPage");
+createNewPage.appendChild(createPage);
+
+createPage.src="Administrative_Modules/ADMINISTRATIVE_MODULE.php";
+createPage.style.width="100%";
+createPage.style.height="100%";
+createPage.style.overflow="none";
+
+}
+
+
+function Application_User_Account_Registration() {
+
+
+var createNewPage = document.getElementById("createPage");
+createNewPage.appendChild(createPage);
+
+createPage.src="Administrative_Modules/Application_User_Account_Registration.php";
+createPage.style.width="100%";
+createPage.style.height="100%";
+createPage.style.overflow="none";
+
+}
+
 function registration() {
 //var Registration_Page = document.getElementById("registration");
 //Registration_Page.appendChild(createPage);
@@ -162,10 +191,10 @@ function registration() {
 var createNewPage = document.getElementById("createPage");
 createNewPage.appendChild(createPage);
 
-createPage.src="Registration-Modules/registration.html";
+createPage.src="Registration-Modules/registration.php";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
+createPage.style.overflow="none";
 
 }
 
@@ -175,10 +204,10 @@ function newRegistration() {
 var createNewPage = document.getElementById("createPage");
 createNewPage.appendChild(createPage);
 
-createPage.src="Registration-Modules/newregistration.html";
+createPage.src="Registration-Modules/newregistration.php";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
+createPage.style.overflow="none";
 
 }
 	
@@ -188,11 +217,10 @@ function searchRegistration() {
 var createNewPage = document.getElementById("createPage");
 createNewPage.appendChild(createPage);
 
-createPage.src="Registration-Modules/search-registration.html";
+createPage.src="Registration-Modules/search-registration.php";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
-
+createPage.style.overflow="none";
 }
 
 
@@ -206,7 +234,7 @@ createNewPage.appendChild(createPage);
 createPage.src="Billing-Modules/billing.html";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
+createPage.style.overflow="none";
 
 }
 
@@ -222,7 +250,7 @@ createNewPage.appendChild(createPage);
 createPage.src="Classes-Modules/classes.html";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
+createPage.style.overflow="none";
 
 }
 
@@ -241,7 +269,7 @@ createNewPage.appendChild(createPage);
 createPage.src="Report-Modules/reports.html";
 createPage.style.width="100%";
 createPage.style.height="100%";
-createPage.style.overflow="scroll";
+createPage.style.overflow="none";
 
 }
 

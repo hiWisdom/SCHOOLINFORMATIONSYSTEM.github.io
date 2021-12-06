@@ -1,0 +1,66 @@
+			SIS (SCHOOL INFORMATION SYSTEM)
+
+ Introduction
+
+School Information System (SIS) is a web application that enables registration of school staffs and students for documentation activities both parties carry out or pertake.
+The School Information System would be use mainly by school staffs and not student. School staffs such as school owner, principal, vice principal, adminitrative and teacher.
+The system will enable this party work seamless, paperless, fast.
+And for student it will make their work and school process fast, qucik, smart.
+
+Features of SIS for User
+
+1. User can do User/Client/Customer
+2. User can book client/customer schedule/appoinment/time-table
+3. User can write notes and assignment and send to client/customer(student) and client/customer(student)  can answer and submit and scores generate automatically immediately and customer can see it and it will recorded automatically in report./*can answer send back and User can mark*/.
+4. User can conduct computer base exam through system
+5. User can post client/customer(student) fees and print
+6. User can print different reports(admin, registration, billing, appoinment, classes, inventory, libaray report e.g Student report card, Student attendant sheet, Student timetable, Staff timetable, )
+7. User can track inventory order
+8. User can print client/customer id cards, personal details and information.
+
+
+Function of School Information System:
+Attendance, Results, Timetable, Sms
+
+
+
+
+
+School Information Processes
+
+Three Categories of people to use the school information system.
+1. Admin
+2. Teacher
+3. Student
+
+
+Module Access For The Three Categories:
+
+1. Admin
+2. Teacher
+3. Student
+
+
+
+
+Client / Customer Process
+
+Step1: User Register Client / Customer
+Step2: Client / Customer pay fees to enable term eligibility for class assign and timetable e.t.c.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Opinions, ideas, suggestions
+
+*Parent should process payment online frm the comfort of their homes without coming to the school.(ifenyi)
+*Emailing system for academic and non-academic staffs in the workspace in application. (sam)
